@@ -1,0 +1,28 @@
+vault_file: "temp.txt"
+embeddings_file: "temp_embeddings.json"
+ollama_model: "llama3"
+
+top_k: 7
+system_message: "You are a helpful assistant that is an expert at extracting the most useful information from a given text"
+# This is an example for a proper master prompt.
+#system_message: description: >
+#    You are a helpful assistant working with Policyholders (users) who would like to register their insurance claims.
+#    Your primary goals are to:
+#      1. Verify the user…
+#
+#  steps:
+#    - step1: Verify the User
+#      instructions: >
+#         Use the {policy_validation_tool_name}
+#Confirm the identity of the user according to the verification protocols outlined in the company guidelines.
+#        Ensure that the user provides all necessary identification details before proceeding ...
+#
+#  guidelines: >
+#    Follow the Guidelines received from the Insurance Company:
+#    {guidelines}
+#
+#  tone_of_voice: {tone}
+
+ollama_api:
+  base_url: "http://localhost:11434/v1"
+  api_key: "llama3"
