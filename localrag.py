@@ -133,7 +133,7 @@ def load_temp_content(filepath="temp.txt"):
         return []
 
 
-def (temp_content):
+def generate_temp_embeddings(temp_content):
     """Generate embeddings for the temp content using Ollama."""
     temp_embeddings = []
     for content in temp_content:
